@@ -1,0 +1,26 @@
+{
+  "name": "fullstack-api",
+  "version": "1.0.0",
+  "description": "Backend en Mongo y Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZunoRick/FullStackJS.git"
+  },
+  "author": "Ricardo Zuno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZunoRick/FullStackJS/issues"
+  },
+  "homepage": "https://github.com/ZunoRick/FullStackJS#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
