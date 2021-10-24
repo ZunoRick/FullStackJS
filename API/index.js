@@ -12,6 +12,10 @@ mongoose.connect('mongodb://localhost/veterinaria', {
     useUnifiedTopology: true
 });
 
+//Habilitar el body-parser
+servidor.use(express.json());
+servidor.use(express.urlencoded({ extended: true }));
+
 //Habilitar routing
 servidor.use('/', routes());
 
