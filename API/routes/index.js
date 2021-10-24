@@ -8,5 +8,10 @@ module.exports = function (){
         pacienteController.nuevoCliente
     );
     
+    //Obtiene todos los registros de pacientes en la BD
+    router.get('/pacientes', 
+        pacienteController.obtenerPacientes
+    );
+
     return router;
 }
