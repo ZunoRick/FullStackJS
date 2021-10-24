@@ -13,5 +13,10 @@ module.exports = function (){
         pacienteController.obtenerPacientes
     );
 
+    //Obtiene un paciente por su ID
+    router.get('/pacientes/:id',
+        pacienteController.obtenerPaciente
+    );
+
     return router;
 }
