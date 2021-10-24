@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 const Pacientes = ({citas}) =>{
     if (citas.length === 0) return null;
-    console.log(citas);
     return(
         <Fragment>
             <h1 className="my-5">Administrador de Pacientes</h1>
@@ -16,7 +15,7 @@ const Pacientes = ({citas}) =>{
                     <div className="col-md-8 mx-auto">
                         <div className="list-group">
                             {citas.map( cita => (
-                                <a key={cita._id} className="p-5 list-group-item list-group-item-action flex-column align-items-start">
+                                <Link to={`/cita/${cita._id}`} key={cita._id} className="p-5 list-group-item list-group-item-action flex-column align-items-start">
                                     <div className="d-flex w-100 justify-content-between mb-4">
                                         <h3 className="mb-3">{cita.nombre}</h3>
                                         <small className="fecha-alta">{cita.fecha} - {cita.hora}</small>
@@ -27,7 +26,7 @@ const Pacientes = ({citas}) =>{
                                         <p>Dueño: {cita.propietario}</p>
                                         <p>Telefono: {cita.telefono}</p>
                                     </div>
-                                </a>
+                                </Link>
                             ))}
                         </div>
                     </div>
