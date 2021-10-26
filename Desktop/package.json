@@ -1,0 +1,16 @@
+{
+  "name": "fullstackjs-desktop",
+  "version": "1.0.0",
+  "description": "Aplicación de Electron",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ./index.html",
+    "dist": "electron-builder -w"
+  },
+  "author": "Ricardo Zuno",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^15.3.0",
+    "electron-builder": "^22.13.1"
+  }
+}
